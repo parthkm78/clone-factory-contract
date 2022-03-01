@@ -1,0 +1,14 @@
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.6.11;
+import "@openzeppelin/upgrades/contracts/Initializable.sol";
+//import "@openzeppelin/contracts/ownership/Ownable.sol";
+//contract Thing is Initializable, Ownable {
+contract MetaCarClonable is Initializable {
+  uint256 public number;
+
+  //function initialize(address _owner,uint256  _number) public {
+    function initialize(uint256  _number) public {
+   //Ownable.initialize(_owner);
+  number = _number;
+  }
+}
